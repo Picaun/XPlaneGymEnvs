@@ -223,6 +223,9 @@ for episode in range(10):
 # Close the environment
 env.close()
 ```
+## Issue
+
+Due to limited personal abilities, various problems are inevitable during operation. Fortunately, we can communicate and solve problems in the issue
 
 ## License
 
