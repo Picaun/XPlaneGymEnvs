@@ -8,8 +8,7 @@ XPlaneGym is an X-Plane flight simulator environment compliant with the OpenAI G
 - **Discrete and Continuous Action Spaces**: Supports various reinforcement learning algorithms such as DQN, PPO, SAC, etc.
 - **Configurable Environment Parameters**: Flexibly set initial attitudes, target states, reward functions, etc.
 - **Attitude Stabilization Task**: Optimized for fixed-wing aircraft attitude control
-- **Position Awareness**: Observation space includes the aircraft's latitude, longitude, and altitude information
-- **Reliable XPlane Connection**: Stable and efficient UDP communication implementation
+- **Reliable XPlane Connection**: Stable and efficient UDP communication implementation,No need to configure any other plugins in xplane 12!
 
 ## Installation Requirements
 
