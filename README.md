@@ -46,6 +46,8 @@ pip install -e .
 
 1. Start the X-Plane flight simulator
 2. Ensure that the UDP communication port is set to 49000 (default value) in "Settings > Network"
+3. Starting a new flight, you can set the weather conditions and flight duration by yourself
+   (note that this function is not yet directly controlled with X-Plane 12 in the XPlaneGym interface)
 
 ### 3. Using Discrete Environment
 
@@ -168,19 +170,6 @@ The reward function is primarily calculated based on the deviation between the c
 - Negative reward for aircraft crash
 - Control smoothness reward (in continuous environment)
 
-## Frequently Asked Questions
-
-### Import Errors
-If you encounter import errors, ensure that:
-- You have executed `pip install -e .` in the XPlaneGym root directory
-- The current Python environment is correct (if using a virtual environment)
-- Check the project structure to ensure directories and files are organized as per the project structure above
-
-### Connection Errors
-If you encounter connection errors:
-- Ensure X-Plane is running
-- Check the UDP port settings (in X-Plane's "Network" settings)
-- Confirm that no firewall is blocking UDP communication
 
 ## Custom Extensions
 
