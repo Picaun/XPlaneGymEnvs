@@ -14,10 +14,7 @@ import gymnasium as gym
 from gymnasium import spaces
 import sys
 import os
-
-# Add parent directory to import path
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from xplane_connect import XPlaneConnect
+from XPlaneGym.xplane_connect import XPlaneConnect
 
 
 class XPlaneEnv(gym.Env):
