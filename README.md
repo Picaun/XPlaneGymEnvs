@@ -12,7 +12,7 @@ XPlaneGym is an X-Plane flight simulator environment compliant with the OpenAI G
 
 ## Installation Requirements
 
-- X-Plane 12 Flight Simulator
+- X-Plane 12 Flight Simulator（Perhaps it will also work in lower versions）
 - Python 3.8+
 - gymnasium
 - numpy
