@@ -141,6 +141,7 @@ The default observation space contains 12 continuous values:
 ### Discrete Action Space
 
 The default provides 9 discrete actions:
+
 0. No action
 1. Pitch up
 2. Pitch down
