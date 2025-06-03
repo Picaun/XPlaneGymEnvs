@@ -236,4 +236,5 @@ MIT
 
 This project is based on the following open source projects:
 - [XPlaneConnectX](https://github.com/sisl/XPlaneConnectX)
+- [GYM_XPLANE_ML](https://github.com/adderbyte/GYM_XPLANE_ML)
 - [Gymnasium](https://github.com/Farama-Foundation/Gymnasium) 
