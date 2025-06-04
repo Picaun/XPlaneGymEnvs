@@ -77,7 +77,7 @@ env.close()
 ```python
 import gymnasium as gym
 import numpy as np
-import XPlaneGym
+import XPlaneGymEnvs
 
 # Create continuous action space environment
 env = gym.make("XPlane-Continuous-v0", action_dim=2)  # Use 2D action space (pitch and roll control)
