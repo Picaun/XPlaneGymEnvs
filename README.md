@@ -1,4 +1,4 @@
-# XPlaneGym: A Reinforcement Learning Environment Compatible with X-Plane
+# XPlane Gym: A Reinforcement Learning Environment Compatible with X-Plane
 
 XPlaneGym is an X-Plane flight simulator environment compliant with the OpenAI Gym interface, specifically designed for reinforcement learning research. It provides seamless integration with the X-Plane simulator, supports both discrete and continuous action spaces, and can be used to train agents to perform flight control tasks.
 
@@ -21,7 +21,7 @@ XPlaneGym is an X-Plane flight simulator environment compliant with the OpenAI G
 
 ```
 # Clone the repository
-git clone https://github.com/Picaun/XPlaneGym.git
+git clone https://github.com/Picaun/XPlaneGymEnvs.git
 cd XPlaneGym
 
 # Install the project and its dependencies
