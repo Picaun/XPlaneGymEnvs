@@ -53,7 +53,7 @@ pip install -e .
 
 ```python
 import gymnasium as gym
-import XPlaneGymEnvs
+import XPlaneGym
 
 # Create discrete action space environment
 env = gym.make("XPlane-Discrete-v0")
@@ -77,7 +77,7 @@ env.close()
 ```python
 import gymnasium as gym
 import numpy as np
-import XPlaneGymEnvs
+import XPlaneGym
 
 # Create continuous action space environment
 env = gym.make("XPlane-Continuous-v0", action_dim=2)  # Use 2D action space (pitch and roll control)
@@ -183,7 +183,7 @@ You can extend the environment functionality by inheriting from the base class:
 
 ```python
 import gymnasium as gym
-import XPlaneGymEnvs
+import XPlaneGym
 import numpy as np
 
 # Create environment
