@@ -1,6 +1,6 @@
 # XPlane Gym: A Reinforcement Learning Environment Compatible with X-Plane
 
-XPlaneGym is an X-Plane flight simulator environment compliant with the OpenAI Gym interface, specifically designed for reinforcement learning research. It provides seamless integration with the X-Plane simulator, supports both discrete and continuous action spaces, and can be used to train agents to perform flight control tasks.
+XPlaneGymEnvs is an X-Plane flight simulator environment compliant with the OpenAI Gym interface, specifically designed for reinforcement learning research. It provides seamless integration with the X-Plane simulator, supports both discrete and continuous action spaces, and can be used to train agents to perform flight control tasks.
 
 ## Features
 
@@ -22,7 +22,7 @@ XPlaneGym is an X-Plane flight simulator environment compliant with the OpenAI G
 ```
 # Clone the repository
 git clone https://github.com/Picaun/XPlaneGymEnvs.git
-cd XPlaneGym
+cd XPlaneGymEnvs
 
 # Install the project and its dependencies
 pip install -e .
@@ -47,13 +47,13 @@ pip install -e .
 1. Start the X-Plane flight simulator
 2. Ensure that the UDP communication port is set to 49000 (default value) in "Settings > Network"
 3. Starting a new flight, you can set the weather conditions and flight duration by yourself
-   (note that this function is not yet directly controlled with X-Plane 12 in the XPlaneGym interface)
+   (note that this function is not yet directly controlled with X-Plane 12 in the XPlaneGymEnvs interface)
 
 ### 3. Using Discrete Environment
 
 ```python
 import gymnasium as gym
-import XPlaneGym
+import XPlaneGymEnvs
 
 # Create discrete action space environment
 env = gym.make("XPlane-Discrete-v0")
@@ -183,7 +183,7 @@ You can extend the environment functionality by inheriting from the base class:
 
 ```python
 import gymnasium as gym
-import XPlaneGym
+import XPlaneGymEnvs
 import numpy as np
 
 # Create environment
