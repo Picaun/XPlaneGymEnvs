@@ -21,6 +21,8 @@ setup(
         "pandas>=1.3.0",
         "PyYAML>=6.0",
         "tqdm>=4.62.0",
+        "stable_baselines3>=2.6.0",
+        "tensorboard>=2.19.0"
     ],
     
     entry_points={
