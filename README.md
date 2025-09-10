@@ -54,7 +54,7 @@ pip install -e .
 cd agent_examples/dqn_example
 ```
 ```
-python python train_dqn.py
+python train_dqn.py
 ```
 
 
