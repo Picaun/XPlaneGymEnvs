@@ -49,52 +49,12 @@ pip install -e .
 3. Starting a new flight, you can set the weather conditions and flight duration by yourself
    (note that this function is not yet directly controlled with X-Plane 12 in the XPlaneGymEnvs interface)
 
-### 3. Using Discrete Environment
+### 3. use agent_examples
+'''
+cd agent_examples/dqn_example
+python python train_dqn.py
+'''
 
-```python
-import gymnasium as gym
-import XPlaneGym
-
-# Create discrete action space environment
-env = gym.make("XPlane-Discrete-v0")
-
-# Reset the environment
-obs, info = env.reset()
-
-# Run one episode
-done = False
-while not done:
-    action = env.action_space.sample()  # Random action, in actual application use actions selected by the agent
-    obs, reward, terminated, truncated, info = env.step(action)
-    done = terminated or truncated
-
-# Close the environment
-env.close()
-```
-
-### 4. Using Continuous Environment
-
-```python
-import gymnasium as gym
-import numpy as np
-import XPlaneGym
-
-# Create continuous action space environment
-env = gym.make("XPlane-Continuous-v0", action_dim=2)  # Use 2D action space (pitch and roll control)
-
-# Reset the environment
-obs, info = env.reset()
-
-# Run one episode
-done = False
-while not done:
-    action = np.array([0.1, -0.1])  # Example action: slight pitch up, slight roll left
-    obs, reward, terminated, truncated, info = env.step(action)
-    done = terminated or truncated
-
-# Close the environment
-env.close()
-```
 
 ## Environment Parameter Configuration
 
