@@ -50,10 +50,10 @@ pip install -e .
    (note that this function is not yet directly controlled with X-Plane 12 in the XPlaneGymEnvs interface)
 
 ### 3. use agent_examples
-'''
+```
 cd agent_examples/dqn_example
 python python train_dqn.py
-'''
+```
 
 
 ## Environment Parameter Configuration
