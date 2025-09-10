@@ -52,6 +52,8 @@ pip install -e .
 ### 3. use agent_examples
 ```
 cd agent_examples/dqn_example
+```
+```
 python python train_dqn.py
 ```
 
