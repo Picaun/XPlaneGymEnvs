@@ -149,7 +149,7 @@ import XPlaneGym
 import numpy as np
 
 # Create environment
-env = gym.make("XPlane-Continuous-v0")
+env = gym.make("XPlane-v0")
 
 # Reset environment to get initial observation
 observation, info = env.reset()
