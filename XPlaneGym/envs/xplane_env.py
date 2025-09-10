@@ -107,8 +107,34 @@ class XPlaneEnv(gym.Env):
         # State space (default implementation)
         # Subclasses can override this space to implement different state representations
         self.observation_space = spaces.Box(
-            low=np.array([-180.0, -90.0, -180.0, -3.0, -3.0, -3.0, -45.0, -45.0, 0.0, -90.0, -180.0, 0.0]),
-            high=np.array([180.0, 90.0, 180.0, 3.0, 3.0, 3.0, 45.0, 45.0, 10000.0, 90.0, 180.0, 50000.0]),
+            low=np.array([
+                -180.0,   # roll error (deg)
+                -90.0,    # pitch error (deg)
+                0.0,      # heading (deg)
+                -10.0,    # roll rate P (rad/s)
+                -10.0,    # pitch rate Q (rad/s)
+                -10.0,    # yaw rate R (rad/s)
+                -45.0,    # angle of attack alpha (deg)
+                -45.0,    # sideslip beta (deg)
+                0.0,      # height AGL (m)
+                -90.0,    # latitude (deg)
+                -180.0,   # longitude (deg)
+                -1000.0   # elevation MSL (m)
+            ], dtype=np.float32),
+            high=np.array([
+                180.0,    # roll error (deg)
+                90.0,     # pitch error (deg)
+                360.0,    # heading (deg)
+                10.0,     # roll rate P (rad/s)
+                10.0,     # pitch rate Q (rad/s)
+                10.0,     # yaw rate R (rad/s)
+                45.0,     # angle of attack alpha (deg)
+                45.0,     # sideslip beta (deg)
+                100000.0, # height AGL (m)
+                90.0,     # latitude (deg)
+                180.0,    # longitude (deg)
+                100000.0  # elevation MSL (m)
+            ], dtype=np.float32),
             dtype=np.float32
         )
         
@@ -340,11 +366,15 @@ class XPlaneEnv(gym.Env):
             roll_error = attitude["roll"]
             pitch_error = attitude["pitch"]
         
+        # Normalize heading to [-180, 180]
+        heading = attitude["heading"]
+        heading_norm = ((heading + 180.0) % 360.0) - 180.0
+
         # Build observation state
         observation = np.array([
             roll_error,  # roll angle deviation
             pitch_error,  # pitch angle deviation
-            attitude["heading"],  # heading
+            heading,  # heading (keep raw 0..360 in obs to match space)
             p,  # roll rate
             q,  # pitch rate
             r,  # yaw rate
