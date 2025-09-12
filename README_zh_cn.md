@@ -40,7 +40,7 @@ pip install -e .
 3. 开始新飞行，可自行设置天气和飞行时间
    （注意：目前 XPlaneGymEnvs 接口还不能直接控制 X-Plane 12 的这些功能）
 
-### 3. 使用示例智能体
+### 3. 使用agent_examples
 
 ```bash
 cd agent_examples/dqn_example
