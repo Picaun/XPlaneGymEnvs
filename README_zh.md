@@ -1,6 +1,6 @@
 # XPlane Gym：兼容 X-Plane 的强化学习环境
 
-XPlaneGymEnvs 是一个符合 OpenAI Gym 接口的 X-Plane 飞行模拟器环境，专门为强化学习研究设计。它可以与 X-Plane 模拟器无缝集成，支持离散和连续动作空间，可用于训练智能体执行飞行控制任务。
+XPlaneGymEnvs 是一个符合 OpenAI Gym 接口的 X-Plane 飞行模拟器环境，专门为强化学习研究设计。与 X-Plane 模拟器无缝集成无需第三方插件，支持离散和连续动作空间，可用于训练智能体执行飞行控制任务。
 
 ## 安装要求
 
