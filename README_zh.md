@@ -132,6 +132,7 @@ env = gym.make(
 * 继承 `XPlaneEnv` 创建新的环境类
 * 重写 `_compute_reward` 方法自定义奖励函数
 * 重写 `_get_observation` 方法自定义观测空间
+* 当然你也可以直接修改`XPlaneEnv`类来自定义环境
 
 ## 使用示例
 
