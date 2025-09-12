@@ -2,14 +2,6 @@
 
 XPlaneGymEnvs is an X-Plane flight simulator environment compliant with the OpenAI Gym interface, specifically designed for reinforcement learning research. It provides seamless integration with the X-Plane simulator, supports both discrete and continuous action spaces, and can be used to train agents to perform flight control tasks.
 
-## Features
-
-- **OpenAI Gym Compatible**: Follows the standard Gym interface for easy integration with mainstream reinforcement learning algorithms
-- **Discrete and Continuous Action Spaces**: Supports various reinforcement learning algorithms such as DQN, PPO, SAC, etc.
-- **Configurable Environment Parameters**: Flexibly set initial attitudes, target states, reward functions, etc.
-- **Attitude Stabilization Task**: Optimized for fixed-wing aircraft attitude control
-- **Reliable XPlane Connection**: Stable and efficient UDP communication implementation,No need to configure any other plugins in xplane 12!
-
 ## Installation Requirements
 
 - X-Plane 12 Flight Simulator（Perhaps it will also work in lower versions）
