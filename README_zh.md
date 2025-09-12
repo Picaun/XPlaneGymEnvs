@@ -196,7 +196,3 @@ MIT
 * [XPlaneConnectX](https://github.com/sisl/XPlaneConnectX)
 * [GYM\_XPLANE\_ML](https://github.com/adderbyte/GYM_XPLANE_ML)
 * [Gymnasium](https://github.com/Farama-Foundation/Gymnasium)
-
----
-
-要不要我帮你直接生成一个 `README_zh.md` 文件，和原来的英文 `README.md` 并列放在项目里？
