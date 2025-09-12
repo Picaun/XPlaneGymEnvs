@@ -14,13 +14,7 @@ register(
 )
 
 register(
-    id="XPlane-Discrete-v0",
-    entry_point="XPlaneGym.envs:XPlaneDiscreteEnv",
+    id="XPlane-custom-v0",
+    entry_point="XPlaneGym.envs:XPlaneCustomEnv",
     max_episode_steps=1000,
 )
-
-register(
-    id="XPlane-Continuous-v0",
-    entry_point="XPlaneGym.envs:XPlaneContinuousEnv",
-    max_episode_steps=1000,
-) 
