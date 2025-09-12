@@ -23,8 +23,7 @@ pip install -e .
 ## Available Environments
 
 - `XPlane-v0`: Basic environment, configurable as discrete or continuous action space
-- `XPlane-Discrete-v0`: Discrete action space environment, suitable for algorithms like DQN
-- `XPlane-Continuous-v0`: Continuous action space environment, suitable for algorithms like PPO, SAC, etc.
+- `XPlane-custom-v0`: custom environment, Import XPlaneEnv class to personalize the environment
 
 ## Quick Start
 
