@@ -48,6 +48,26 @@ Training parameters can be adjusted in the script, including:
 
 During training, the model is periodically saved in the `./models` directory, and training logs are saved in the `./logs` directory.
 
+### Resuming Training (Checkpoint Resume)
+
+Support resuming training from the last checkpoint and restoring VecNormalize statistics.
+
+Basic resume (auto-load the latest `dqn_model*_steps.zip` and `vec_normalize.pkl` from `--save_path`):
+
+```bash
+python train_dqn.py --resume true
+```
+
+Specify a particular checkpoint file:
+
+```bash
+python train_dqn.py --resume true --checkpoint_path ./models/dqn_model_100000_steps.zip
+```
+
+Notes:
+- `vec_normalize.pkl` will be auto-loaded/saved in `--save_path` for normalization continuity.
+- Remaining timesteps are computed as `total_timesteps - already_trained`, with `reset_num_timesteps` handled appropriately.
+
 ### Evaluating the Model
 
 After training, you can evaluate model performance:
