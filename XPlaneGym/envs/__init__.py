@@ -5,4 +5,4 @@ This module contains XPlane environment classes that conform to the OpenAI Gym i
 """
 
 from .xplane_env import XPlaneEnv
-from .xplane_discrete_env import XPlaneCustomEnv
+from .xplane_custom_env import XPlaneCustomEnv
