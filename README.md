@@ -60,7 +60,7 @@ Various parameters can be configured when creating the environment:
 
 ```python
 env = gym.make(
-    "XPlane-Continuous-v0",
+    "XPlane-v0",
     ip='127.0.0.1',                # X-Plane IP address
     port=49000,                    # X-Plane UDP port
     timeout=1.0,                   # Communication timeout
