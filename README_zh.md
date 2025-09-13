@@ -58,7 +58,7 @@ python train_dqn.py
 
 ```python
 env = gym.make(
-    "XPlane-Continuous-v0",
+    "XPlane-v0",
     ip='127.0.0.1',                # X-Plane IP 地址
     port=49000,                    # X-Plane UDP 端口
     timeout=1.0,                   # 通信超时时间
