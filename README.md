@@ -78,10 +78,6 @@ env = gym.make(
 )
 ```
 
-
-
-MIT
-
 ## Acknowledgements
 
 This project is based on the following open source projects:
